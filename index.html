@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لمستي | عبايات وتفصيل حسب الطلب</title>
+
+  <style>
+    :root {
+      --primary: #7c3aed;
+      --secondary: #a78bfa;
+      --dark: #1f2937;
+      --light: #fafafa;
+      --gray: #6b7280;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Tajawal", "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.8;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 38px;
+      background: white;
+      color: var(--primary);
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: var(--gray);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .cta {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      border-radius: 25px;
+      padding: 70px 20px;
+    }
+
+    .cta h2 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    .fade {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease;
+    }
+
+    .fade.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>لمستي</h1>
+    <p>منصة تجمع أفضل محلات العبايات وخدمة التفصيل حسب الطلب</p>
+    <a href="#features" class="btn">استكشفي الآن</a>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="fade">
+    <div class="about">
+      <div>
+        <h2>عن لمستي</h2>
+        <p>
+          لمستي تطبيق ذكي يربطك بمحلات العبايات ومشاغل التفصيل بكل سهولة.
+          اختاري الموديل، القماش، المقاس، واستلمي عبايتك مصممة خصيصًا لك.
+        </p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1618354691438-25bc04584c23?q=80&w=900" alt="عبايات">
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="fade">
+    <div class="section-title">
+      <h2>ماذا يميز لمستي؟</h2>
+      <p>كل ما تحتاجينه في مكان واحد</p>
+    </div>
+
+    <div class="features">
+      <div class="card">
+        <h3>🧵 تفصيل حسب الطلب</h3>
+        <p>اختيار المقاس، القماش، والتصميم بكل سهولة</p>
+      </div>
+      <div class="card">
+        <h3>🏪 محلات موثوقة</h3>
+        <p>مجموعة مختارة من أفضل محلات العبايات</p>
+      </div>
+      <div class="card">
+        <h3>📦 توصيل سريع</h3>
+        <p>استلام العباية لباب البيت بأمان</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="fade">
+    <div class="cta">
+      <h2>ابدئي تجربتك مع لمستي</h2>
+      <p>عبايتك… بتفصيل يليق بذوقك</p>
+      <a href="#" class="btn">اطلبي الآن</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 لمستي. جميع الحقوق محفوظة.
+  </footer>
+
+  <script>
+    const elements = document.querySelectorAll('.fade');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
